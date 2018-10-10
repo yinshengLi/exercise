@@ -1,0 +1,2 @@
+# exercise
+python exercise project
