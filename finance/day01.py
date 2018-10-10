@@ -35,7 +35,7 @@ list_date	str	上市日期
 delist_date	str	退市日期
 is_hs	str	是否沪深港通标的，N否 H沪股通 S深股通
 '''
-st = pro.query('stock_basic', exchange_id='', is_hs='S', fields='ts_code,symbol,name,list_date,list_status')
+# st = pro.query('stock_basic', exchange_id='', is_hs='S', fields='ts_code,symbol,name,list_date,list_status')
 # st.to_excel('../data/finance2.xlsx')
 # print(st)
 
