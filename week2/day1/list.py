@@ -16,16 +16,16 @@ print(a)
 a[1] ='xx'
 print(a)
 a[2:4]=['cv','dd']#修改多个值
-print(a)
+print('after change multiple value:',a)
 #删除 remove
 a.remove('11')
-print(a)
+print('after remove one element:',a)
 
 s = a.pop(3)
-print(s)
+print("use pop() :",s)
 
 del a[1:3]#删除
-print(a)
+print("after use del to delete multiple elements:",a)
 del a#删除对象
 
 #index() 找到元素的索引
@@ -34,4 +34,4 @@ index = ff.index('tht')
 print(index)
 
 ff.reverse()
-print(ff)
+print('after use reverse() to change order:',ff)

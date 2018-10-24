@@ -50,7 +50,7 @@ lista = [10, 40, 3, 5, 9, 80, 100]
 print('origin:', lista)
 
 # print('bubble_sort:',bubble_sort(lista))
-print('cocktail_sort:', cocktailSort(lista))
+# print('cocktail_sort:', cocktailSort(lista))
 
 # directInsertSort(lista,len(lista))
 # print('directInsertSort',lista)

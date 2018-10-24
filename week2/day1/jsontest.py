@@ -3,7 +3,7 @@
 import json
 
 f = json.dumps([1, 'simple', 2])
-
+print(type(f))
 file1 = open("C:/WorkspacePython/testfile.txt", 'w+')
 file1.write(f)
 file1.close()

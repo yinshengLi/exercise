@@ -7,6 +7,6 @@ for name, phone in table.items():
 
 animals = 'eels不知道'
 print(f'My hovercraft is full of {animals}')
-print(f'test !r means {animals !s}')#'!s' applies str()
-print(f'test !r means {animals !a}')# '!a' applies ascii()
+print(f'test !s means {animals !s}')#'!s' applies str()
+print(f'test !a means {animals !a}')# '!a' applies ascii()
 print(f'test !r means {animals !r}')#'!r' applies repr()

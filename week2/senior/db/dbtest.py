@@ -49,16 +49,16 @@ except:
     print('Error: unalbe to fetch data')
 
 # 更新
-updatesql = '''UPDATE EMPLOYEETT set AGE = AGE +1 WHERE INCOME > 0'''
-
-try:
-    # 执行sql语句
-    cursor.execute(updatesql)
-    # 提交到数据库执行
-    db.commit()
-except Exception as e:
-    print('出现异常，回滚', e)
-    db.rollback()
+# updatesql = '''UPDATE EMPLOYEETT set AGE = AGE +1 WHERE INCOME > 0'''
+#
+# try:
+#     # 执行sql语句
+#     cursor.execute(updatesql)
+#     # 提交到数据库执行
+#     db.commit()
+# except Exception as e:
+#     print('出现异常，回滚', e)
+#     db.rollback()
 
 print('执行成功')
 # 关闭数据库连接
