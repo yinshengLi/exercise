@@ -8,15 +8,16 @@ import matplotlib.pyplot as plt
 # s = pd.Series([1, 3, 4, np.nan, 6, 8])
 # print(s)
 # print(s[0])
-
+#
+#
 print('---------#################------DataFrame----------##################-------------')
 # Creating a DataFrame by passing a NumPy array, with a datetime index and labeled columns
 dates = pd.date_range('20130101', periods=6)
-print(dates)
+# print(dates)
 df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 print(df)
 
-# # Creating a DataFrame by passing a dict of objects that can be converted to series-like.
+# Creating a DataFrame by passing a dict of objects that can be converted to series-like.
 # df2 = pd.DataFrame({
 #     'A': 1.,
 #     'B': pd.Timestamp('20130102'),
@@ -29,37 +30,36 @@ print(df)
 # print('df2-types:\n',df2.dtypes)
 #
 # print('-------------Here is how to view the top and bottom rows of the frame:------------')
-# print(df.head())
+# print('head:\n', df.head(3))
 # print('tail:\n',df.tail(3))
-#
+
+
+
 # print('------------Display the index, columns, and the underlying NumPy data:----------')
-# print(df.index)
+# print('index:\n', df.index)
 # print('columns:\n', df.columns)
 # print('values:\n', df.values)
 #
 # print('-----------describe() shows a quick statistic summary of your data:---------')
 # print(df.describe())
-#
+
 # print('-------------Transposing your data:----------------')
 # print(df.T) #行变列，列变行
-#
 # print('--------------Sorting by an axis:--------')
 # print(df.sort_index(axis=1, ascending=False))
-#
-# # Selection
-# print('#####################-----------Selection-----------###############################----')
-#
-#
-# #  df['A'] Selecting a single column, which yields a Series, equivalent to df.A:
+
+#Selection
+print('#####################-----------Selection-----------###############################----')
+ # df['A'] Selecting a single column, which yields a Series, equivalent to df.A:
 # print(df['A'])
 # print(df.A)
 
-# print('-------------Selecting via [], which slices the rows.---------------')
-# print(df[0:3])
+# print('-------------dSelecting via [], which slices the rows.---------------')
+# print('slice three rows:\n', df[0:3])
 #
 # print('-------------For getting a cross section using a label:---------------')
 # print(dates[0])
-# print(df.loc[dates[0]])
+# print(df.loc[dates[0]]) # equeals get
 #
 # print('----------Selecting on a multi-axis by label-------')
 # print(df.loc[:, ['A','B']])

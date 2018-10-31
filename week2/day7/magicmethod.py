@@ -1,8 +1,10 @@
 #__author:iruyi
 #date:2018/10/18
+import math
 
 li = [1,3,6,4,6]
 li.__setitem__(3,10)
+li.insert(0,100)
 print(li)
 
 

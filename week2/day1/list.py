@@ -35,3 +35,9 @@ print(index)
 
 ff.reverse()
 print('after use reverse() to change order:',ff)
+# "+" 操作新建list， append 是修改原有的list
+newff = ff + [40]
+ff[0] = 12
+ff.append(41)
+print(ff)
+print(newff)
