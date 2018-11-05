@@ -31,7 +31,6 @@ def merge(L1, L2):
     newL.extend(L2[i2:])
 
     return newL
-
 if __name__ == '__main__':
     lista = [10, 5, 3, 4, 100, 89, 20]
     print( bin_sort(lista))
