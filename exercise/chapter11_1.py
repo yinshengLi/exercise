@@ -2,6 +2,7 @@
 #date:2018/11/2
 import time
 from exercise import chapter11
+from exercise import chapter11_2 as bs
 
 def time_it(search, v, L):
     '''Time how long it takes to run function search to find value v in list L.'''
@@ -24,9 +25,10 @@ def print_times(v, L):
     basic_time = time_it(chapter11.linear_search, v, L)
     for_time = time_it(chapter11.linear_search2, v, L)
     sentinel_time = time_it(chapter11.linear_search3, v, L)
+    binary_time = time_it(bs.binary_search, v, L)
 
-    print("value=%d\t basic_time=%.02f\t for_time=%.02f\t sentinel_time=%.02f\t index_time=%.02f"
-          % (v, basic_time, for_time, sentinel_time, index_time))
+    print("value=%d\t basic_time=%.02f\t for_time=%.02f\t sentinel_time=%.02f\t index_time=%.02f\t binary_time=%.02f"
+          % (v, basic_time, for_time, sentinel_time, index_time, binary_time))
 
 
 
